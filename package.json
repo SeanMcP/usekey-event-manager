@@ -1,0 +1,11 @@
+{
+  "name": "usekey-event-manager",
+  "version": "0.0.0",
+  "description": "Easily map window functions to keyboard events",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean McPherson",
+  "license": "ISC"
+}
