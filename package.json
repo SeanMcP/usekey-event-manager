@@ -3,9 +3,20 @@
   "version": "0.0.0",
   "description": "Easily map window functions to keyboard events",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sean McPherson",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.9.4",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "typescript": "^3.6.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
 }
