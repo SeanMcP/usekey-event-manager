@@ -1,5 +1,7 @@
 import React from 'react'
 
+const KEYDOWN_EVENT_TYPE = 'keydown'
+
 interface KeyboardEventMap {
     [key: string]: (e: KeyboardEvent) => any
 }
@@ -11,8 +13,8 @@ function useKey(keyboardEventMap: KeyboardEventMap): void {
         }
     }
     React.useEffect(() => {
-        window.addEventListener('keydown', keyboardEventListener)
-        return () => window.removeEventListener('keydown', keyboardEventListener)
+        window.addEventListener(KEYDOWN_EVENT_TYPE, keyboardEventListener)
+        return () => window.removeEventListener(KEYDOWN_EVENT_TYPE, keyboardEventListener)
     }, [keyboardEventMap])
 }
 
