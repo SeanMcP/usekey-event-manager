@@ -10,7 +10,7 @@
     "prepublishOnly": "npm run build",
     "preversion": "npm run test",
     "test": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watch"
   },
   "author": "Sean McPherson",
   "license": "ISC",
