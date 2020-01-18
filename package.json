@@ -6,9 +6,11 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "postpublish": "git push --tags",
+    "prepublishOnly": "npm run build",
+    "preversion": "npm run test",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "prepare": "npm run build"
   },
   "author": "Sean McPherson",
   "license": "ISC",
