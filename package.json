@@ -1,7 +1,7 @@
 {
   "name": "usekey-event-manager",
   "version": "0.0.1-0",
-  "description": "Easily map window functions to keyboard events",
+  "description": "Easily map window functions to keyboard events in React",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -31,5 +31,9 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0"
-  }
+  },
+  "keywords": [
+      "usekey",
+      "react"
+  ]
 }
