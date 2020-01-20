@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-`useKey` is a custom React hook, so you're project must be running React and ReactDOM versions `16.7+`.
+`useKey` is a custom React hook, so you're project must be running React and ReactDOM versions `16.8+`.
 
 ### Installation
 
