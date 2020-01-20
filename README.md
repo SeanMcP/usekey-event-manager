@@ -1,32 +1,69 @@
 # usekey-event-manager
 
-## Table of Contents
+[![npm](https://img.shields.io/npm/v/usekey-event-manager.svg)](https://npmjs.com/package/usekey-event-manager) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/usekey-event-manager.svg)](https://npmjs.com/package/usekey-event-manager) [![npm](https://img.shields.io/npm/dt/usekey-event-manager.svg)](https://npmjs.com/package/usekey-event-manager) [![A project badge feature text "PRs Welcome"](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
-+ [About](#about)
-+ [Getting Started](#getting_started)
-+ [Usage](#usage)
-+ [Contributing](./CONTRIBUTING.md)
+🔑 Easily map window functions to keyboard events in React
 
-## About <a name="about"></a>
-Write about 1-2 paragraphs describing the purpose of your project.
-
-## Getting Started <a name="getting_started"></a>
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
+## Prerequisites
 
 `useKey` is a custom React hook, so you're project must be running React and ReactDOM versions `16.7+`.
 
-### Installing
+### Installation
 
-A step by step series of examples that tell you how to get a development env running.
+To install, use your package manager of choice. Here is the command for npm:
 
-Say what the step will be
+```sh
+npm i usekey-event-manager
+```
 
-And repeat
+## Usage
 
-End with an example of getting some data out of the system or using it for a little demo.
+Import `useKey` from `usekey-event-manager` and pass it a keyboard event map:
 
-## Usage <a name = "usage"></a>
+```jsx
+import React from 'react'
+import useKey from 'usekey-event-manager'
 
-Add notes about how to use the system.
+function Dialog(props) {
+    useKey({ Escape: props.closeAndReturnFocus })
+    return(
+        <div role="alertdialog">
+            {/* ... */}
+        </div>
+    )
+}
+
+export default Dialog
+```
+
+## API
+
+Version 1+ of `usekey-event-manager` comprises a single export: `useKey`.
+
+### `useKey()`
+
+`useKey` is a custom React hook that assigns a window event listener on keydown. When an event is fired, the listener compares it to a set of selected keys, then calls the action and passes the event object if there is a match.
+
+```js
+useKey(Object<String, Function>)
+```
+
+If there is a single key that you want to listen for, you can pass a map like so:
+
+```js
+useKey({ Escape: close })
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Author
+
+[Sean McPherson](https://seanmcp.com)
+
+## License
+
+[MIT](/LICENSE)
