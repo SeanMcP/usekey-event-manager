@@ -1,6 +1,6 @@
 import { renderHook } from "@testing-library/react-hooks";
 import { fireEvent } from "@testing-library/react";
-import useKey from "./useKey";
+import useKey from "./index";
 
 const EnterEvent = {
   key: "Enter",
