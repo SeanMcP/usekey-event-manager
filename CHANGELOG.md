@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - `CHANGELOG.md` to follow the format from Keep a Changelog
+- Organization in `src/` to reduce the number of files in the build
+- TypeScript config to target `src/` and exclude tests
+- Package details
 
 ## [0.0.1-0] - 2020-01-21
 
