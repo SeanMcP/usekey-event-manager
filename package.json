@@ -1,6 +1,6 @@
 {
   "name": "usekey-event-manager",
-  "version": "0.0.1-0",
+  "version": "1.0.0",
   "description": "Easily map window listeners to keyboard events in React",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -13,9 +13,9 @@
     "test:watch": "jest --watch"
   },
   "author": {
-      "email": "sean@seanmcp.com",
-      "name": "Sean McPherson",
-      "url": "https://seanmcp.com"
+    "email": "sean@seanmcp.com",
+    "name": "Sean McPherson",
+    "url": "https://seanmcp.com"
   },
   "license": "ISC",
   "devDependencies": {
@@ -37,15 +37,15 @@
     "react": ">=16.8.0"
   },
   "files": [
-      "lib"
+    "lib"
   ],
   "keywords": [
-      "usekey",
-      "use key",
-      "key",
-      "window",
-      "keyboard event",
-      "event listener",
-      "react"
+    "usekey",
+    "use key",
+    "key",
+    "window",
+    "keyboard event",
+    "event listener",
+    "react"
   ]
 }
