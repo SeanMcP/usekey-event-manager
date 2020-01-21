@@ -12,7 +12,11 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Sean McPherson",
+  "author": {
+      "email": "sean@seanmcp.com",
+      "name": "Sean McPherson",
+      "url": "https://seanmcp.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -37,6 +41,9 @@
   ],
   "keywords": [
       "usekey",
+      "key",
+      "window",
+      "event listener",
       "react"
   ]
 }
