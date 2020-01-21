@@ -32,6 +32,9 @@
   "peerDependencies": {
     "react": ">=16.8.0"
   },
+  "files": [
+      "lib"
+  ],
   "keywords": [
       "usekey",
       "react"
