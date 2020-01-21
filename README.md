@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/usekey-event-manager.svg)](https://npmjs.com/package/usekey-event-manager) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/usekey-event-manager.svg)](https://npmjs.com/package/usekey-event-manager) [![npm](https://img.shields.io/npm/dt/usekey-event-manager.svg)](https://npmjs.com/package/usekey-event-manager) [![A project badge feature text "PRs Welcome"](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
-🔑 Easily map window functions to keyboard events in React
+🔑 Easily map window listeners to keyboard events in React
 
 ## Prerequisites
 
